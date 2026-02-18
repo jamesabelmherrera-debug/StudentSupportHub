@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Support Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Support Hub</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#study">Study Tips</a>
+        <a href="#time">Time Management</a>
+        <a href="#mental">Mental Health</a>
+        <a href="#motivation">Motivation</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button onclick="toggleDarkMode()">Dark Mode</button>
+</header>
+
+<section id="home" class="section">
+    <h2>Welcome</h2>
+    <p>Your guide to improving study habits, managing time, and staying motivated.</p>
+</section>
+
+<section id="study" class="section">
+    <h2>Study Tips</h2>
+    <button onclick="toggleTips()">Show/Hide Tips</button>
+    <ul id="tips">
+        <li>Use active recall and practice tests.</li>
+        <li>Study in 25-minute focused sessions.</li>
+        <li>Review notes daily.</li>
+        <li>Avoid distractions while studying.</li>
+    </ul>
+</section>
+
+<section id="time" class="section">
+    <h2>Pomodoro Timer</h2>
+    <div id="timer">25:00</div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+</section>
+
+<section id="mental" class="section">
+    <h2>Mental Health</h2>
+    <p>Take breaks, breathe deeply, and talk to someone when stressed.</p>
+</section>
+
+<section id="motivation" class="section">
+    <h2>Motivation</h2>
+    <p id="quote">Click below for motivation!</p>
+    <button onclick="newQuote()">Get Motivation</button>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
