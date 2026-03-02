@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Support Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,11 +21,13 @@
     <button onclick="toggleDarkMode()">Dark Mode</button>
 </header>
 
+<!-- Home Section -->
 <section id="home" class="section">
     <h2>Welcome</h2>
     <p>Your guide to improving study habits, managing time, and staying motivated.</p>
 </section>
 
+<!-- Study Tips Section -->
 <section id="study" class="section">
     <h2>Study Tips</h2>
     <button onclick="toggleTips()">Show/Hide Tips</button>
@@ -36,6 +39,7 @@
     </ul>
 </section>
 
+<!-- Pomodoro Timer Section -->
 <section id="time" class="section">
     <h2>Pomodoro Timer</h2>
     <div id="timer">25:00</div>
@@ -43,54 +47,49 @@
     <button onclick="resetTimer()">Reset</button>
 </section>
 
+<!-- Mental Health Section -->
 <section id="mental" class="section">
     <h2>Mental Health</h2>
-    <p>It's crucial to take quick breaks when you start to feel overwhelmed so that your body and mind can recuperate. Even if it's only for a little while, take a break from your work and give yourself time to recharge. Inhale through your nose, hold it for a few seconds, and then gradually exhale through your mouth to practise deep, slow breathing. Your heart rate will drop and your muscles will relax as a result. Above all, talk to someone you can trust, such as a friend, family member, or teacher, about your stress. Sharing your thoughts and emotions can help you find solutions and support, as well as make difficulties feel lighter.
-</p>
-    <p>Building healthy routines can help prevent stress before it becomes overwhelming. Getting enough sleep each night, eating balanced meals, and staying physically active can improve both your mood and energy levels. When your body feels strong and well-rested, your mind is better prepared to handle challenges. Organizing your tasks and setting realistic goals can also reduce pressure, making responsibilities feel more manageable instead of stressful.
-        </p>
+    <p>It's crucial to take quick breaks when you start to feel overwhelmed so that your body and mind can recuperate. Even if it's only for a little while, take a break from your work and give yourself time to recharge. Inhale through your nose, hold it for a few seconds, and then gradually exhale through your mouth to practise deep, slow breathing. Your heart rate will drop and your muscles will relax as a result. Above all, talk to someone you can trust, such as a friend, family member, or teacher, about your stress. Sharing your thoughts and emotions can help you find solutions and support, as well as make difficulties feel lighter.</p>
+    <p>Building healthy routines can help prevent stress before it becomes overwhelming. Getting enough sleep each night, eating balanced meals, and staying physically active can improve both your mood and energy levels. When your body feels strong and well-rested, your mind is better prepared to handle challenges. Organizing your tasks and setting realistic goals can also reduce pressure, making responsibilities feel more manageable instead of stressful.</p>
     <p>It is also important to make time for activities that bring you joy and relaxation. Hobbies such as listening to music, drawing, playing sports, or spending time outdoors can refresh your mind and improve your emotional well-being. Surrounding yourself with positive and supportive people can strengthen your confidence and help you feel understood. By practicing self-care regularly, you create a healthy balance between responsibilities and personal happiness.</p>
 </section>
 
+<!-- Motivation Section -->
 <section id="motivation" class="section">
     <h2>Motivation</h2>
     <p id="quote">Click below for motivation!</p>
     <button onclick="newQuote()">Get Motivation</button>
 </section>
 
+<!-- Contact Section -->
 <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <form onsubmit="return validateForm()">
-        <input type="text" id="name" placeholder="Your Name">
-        <input type="email" id="email" placeholder="Your Email">
-        <textarea id="message" placeholder="Your Message"></textarea>
+    <h2>Contact Us 📩</h2>
+    <p>Have questions, suggestions, or need help? We’d love to hear from you! Feel free to reach out anytime.</p>
+
+    <!-- Contact Form -->
+    <form onsubmit="return validateForm()" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
     </form>
     <p id="formMessage"></p>
+
+    <!-- Contact Info Box -->
+    <div class="contact-box">
+        <img src="images/contact.jpg" alt="Contact illustration" class="contact-img">
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Email us directly:</p>
+            <a href="mailto:jamesabelmherrera@gmail.com" class="email-link">
+                jamesabelmherrera@gmail.com
+            </a>
+            <p>We usually respond within 24–48 hours.</p>
+        </div>
+    </div>
 </section>
 
-    <section id="contact" class="contact-section">
-  <h2>📩 Contact Us</h2>
-  <p>
-    Have questions, suggestions, or need help? 
-    We’d love to hear from you! Feel free to reach out anytime.
-  </p>
-
-  <div class="contact-box">
-    <img src="images/contact.jpg" alt="Contact illustration" class="contact-img">
-
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p>Email us directly:</p>
-      <a href="mailto:jamesabelmherrera@gmail.com" class="email-link">
-        jamesabelmherrera@gmail.com
-      </a>
-      <p>We usually respond within 24–48 hours.</p>
-    </div>
-  </div>
-    </section>
-    
 <script src="script.js"></script>
 </body>
-</html>
-
+        </html>
