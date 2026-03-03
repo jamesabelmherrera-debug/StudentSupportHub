@@ -1,51 +1,118 @@
+/* Google Font (optional but recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    background: #f4f8fb;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
     color: #333;
+    transition: 0.3s ease;
 }
 
+/* HEADER */
 header {
-    background: #4a90e2;
+    background: linear-gradient(90deg, #667eea, #764ba2);
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 10px;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #ffd369;
+    text-shadow: 0 0 5px rgba(255,255,255,0.7);
+}
+
+/* BUTTONS */
 button {
-    padding: 8px 12px;
-    margin: 5px;
+    padding: 10px 18px;
+    margin: 8px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #333;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+}
+
+/* SECTIONS */
 .section {
-    padding: 30px;
+    padding: 40px;
     text-align: center;
+    margin: 20px auto;
+    width: 85%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
+/* TIMER */
 #timer {
-    font-size: 40px;
+    font-size: 48px;
+    font-weight: bold;
     margin: 20px 0;
+    color: #764ba2;
 }
 
-form input, form textarea {
+/* FORM */
+form input, 
+form textarea {
     display: block;
-    width: 60%;
-    margin: 10px auto;
-    padding: 8px;
+    width: 70%;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
 }
 
+form input:focus,
+form textarea:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 10px rgba(118,75,162,0.3);
+}
+
+/* DARK MODE */
 .dark-mode {
-    background: #1e1e1e;
-    color: white;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #f1f1f1;
 }
 
 .dark-mode header {
-    background: #222;
+    background: linear-gradient(90deg, #000428, #004e92);
+}
+
+.dark-mode .section {
+    background: #2c2c2c;
+    color: white;
+}
+
+.dark-mode button {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+.dark-mode #timer {
+    color: #00c6ff;
 }
